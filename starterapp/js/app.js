@@ -11,7 +11,7 @@ let displayWikipediaData = () => {
            let linkList = res[1];
             linkList.forEach(function(item){ // Function is run each time, es6
                 let url = 'https://en.wikipedia.org/wiki/' + item;
-                $linksElement.append('<li style="margin:2%; color:white; background-color: #232C3F;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent wikiLinks" id="wikilinks"><a href="' + url + '" target="_blank" style="color:white;" id="wikiURL">' + item + '</a></li>');
+                $linksElement.append('<li style="margin:2%; color:white; background-color: #232C3F; width:100%;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent wikiLinks" id="wikilinks"><a href="' + url + '" target="_blank" style="color:white;" id="wikiURL">' + item + '</a></li>');
                 return url;
             })
             $('#clearScreen').prop('disabled', false);
